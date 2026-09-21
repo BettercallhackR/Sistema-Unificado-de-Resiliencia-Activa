@@ -1,0 +1,38 @@
+{
+  "sura": {
+    "mode": "simulation",
+    "version": "0.1.0",
+    "log_level": "INFO"
+  },
+  "simulation": {
+    "enabled": true,
+    "input_event": "tests/fixtures/sura_01_detection_event.json",
+    "output_report_dir": "logs"
+  },
+  "real": {
+    "enabled": false,
+    "sysmon_enabled": false,
+    "firewall_enabled": false,
+    "switch_enabled": false,
+    "truenas_enabled": false,
+    "hyperv_enabled": false
+  },
+  "core": {
+    "incident_prefix": "SURA",
+    "enable_parallel_execution": true,
+    "timeout_seconds": 10
+  },
+  "containment": {
+    "enabled": true,
+    "mode": "simulation",
+    "default_action": "ISOLATE"
+  },
+  "resilience": {
+    "enabled": true,
+    "mode": "simulation",
+    "default_actions": [
+      "PROTECT_STORAGE",
+      "CREATE_CHECKPOINT"
+    ]
+  }
+}
