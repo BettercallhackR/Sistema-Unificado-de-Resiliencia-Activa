@@ -1,0 +1,10 @@
+# CODEOWNERS - SURA
+# Responsables por módulo del proyecto.
+
+/01-detection/      @jorgcastillo
+/02-core/           @BettercallhackR
+/03-containment/    @Rich0509
+/04-resilience/     @Darwinmg21
+/shared/            @BettercallhackR
+/tests/             @BettercallhackR
+/docs/              @BettercallhackR
